@@ -49,7 +49,7 @@
 
 		<div class="tab-content">
 			<div class="tab-pane in active" id="user-login">
-				<form method="POST" action="login.php" id="login-form">
+				<form method="POST" id="login-form">
 
 					<?php include('errors.php'); ?>
 
