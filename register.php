@@ -34,45 +34,97 @@
 	</div>
 	
 	<div id="register-panel">
-		<form method="post" action="register.php">
+		<ul class="nav nav-tabs" id="tab-list">
+			<li class="active"><a data-toggle="tab" href="#user-register">Utilizator</a></li>
+			<li><a data-toggle="tab" href="#company-register">Companie</a></li>
+		</ul>
 
-			<?php include('errors.php'); ?>
+		<div class="tab-content">
+			<div id="user-register" class="tab-pane in active">
+				<form method="post">
 
-			<div class="form-group">
-				<label>Prenume</label>
-				<input type="text" name="firstname" id="firstName" value="<?php echo $firstName; ?>">
+					<?php include('errors.php'); ?>
+					<!-- Default switch -->
+
+					<div class="form-group">
+						<label>Prenume</label>
+						<input type="text" name="firstname" id="firstName" value="<?php echo $firstName; ?>">
+					</div>
+					<div class="form-group">
+						<label>Nume</label>
+						<input type="text" name="lastname" id="lastName" value="<?php echo $lastName; ?>">
+					</div>
+					<div class="form-group">
+						<label>CNP</label>
+						<input type="text" name="CNP" id="CNP" value="<?php echo $CNP; ?>">
+					</div>
+					<div class="form-group">
+						<label>Email</label>
+						<input type="email" name="email" id="email" value="<?php echo $email; ?>">
+					</div>
+					<div class="form-group">
+						<label>Numar de telefon</label>
+						<input type="text" name="phoneNo" id="phoneNo" value="<?php echo $phoneNo; ?>">
+					</div>
+					<div class="form-group">
+						<label>Parola</label>
+						<input type="password" id="password" name="password_1">
+					</div>
+					<div class="form-group">
+						<label>Confirmare parola</label>
+						<input type="password" id="password2" name="password_2">
+					</div>
+					<div class="form-group">	
+						<button type="submit" class="btn btn-custom" name="reg_user" id="submit-button">Inregistreaza-te ca utilizator</button>
+					</div>
+					<p>
+						Esti deja membru? <a href="login.php">Autentifica-te</a>
+					</p>
+				</form>
 			</div>
-			<div class="form-group">
-				<label>Nume</label>
-				<input type="text" name="lastname" id="lastName" value="<?php echo $lastName; ?>">
+			<div id="company-register" class="tab-pane fade">
+				<form method="post">
+
+					<?php include('errors.php'); ?>
+					<!-- Default switch -->
+
+					<div class="form-group">
+						<label>Numele companiei</label>
+						<input type="text" name="companyName" id="companyName" value="<?php echo $companyName; ?>">
+					</div>
+					<div class="form-group">
+						<label>Adresa</label>
+						<input type="text" name="companyAddress" id="companyAddress" value="<?php echo $companyAddress; ?>">
+					</div>
+					<div class="form-group">
+						<label>Cod Unic de Inregistrare(CUI)</label>
+						<input type="text" name="CompanyRegNo" id="CompanyRegNo" value="<?php echo $CompanyRegNo; ?>">
+					</div>
+					<div class="form-group">
+						<label>Email</label>
+						<input type="email" name="email" id="email" value="<?php echo $email; ?>">
+					</div>
+					<div class="form-group">
+						<label>Numar de telefon</label>
+						<input type="text" name="phoneNo" id="phoneNo" value="<?php echo $phoneNo; ?>">
+					</div>
+					<div class="form-group">
+						<label>Parola</label>
+						<input type="password" id="password" name="password_1">
+					</div>
+					<div class="form-group">
+						<label>Confirmare parola</label>
+						<input type="password" id="password2" name="password_2">
+					</div>
+					<div class="form-group">	
+						<button type="submit" class="btn btn-custom" name="reg_company" id="submit-button">Inregistreaza-ti compania</button>
+					</div>
+					<p>
+						Compania are deja cont? <a href="login.php">Autentifica-te</a>
+					</p>
+				</form>
 			</div>
-			<div class="form-group">
-				<label>CNP</label>
-				<input type="text" name="CNP" id="CNP" value="<?php echo $CNP; ?>">
-			</div>
-			<div class="form-group">
-				<label>Email</label>
-				<input type="email" name="email" id="email" value="<?php echo $email; ?>">
-			</div>
-			<div class="form-group">
-				<label>Numar de telefon</label>
-				<input type="text" name="phoneNo" id="phoneNo" value="<?php echo $phoneNo; ?>">
-			</div>
-			<div class="form-group">
-				<label>Parola</label>
-				<input type="password" id="password" name="password_1">
-			</div>
-			<div class="form-group">
-				<label>Confirmare parola</label>
-				<input type="password" id="password2" name="password_2">
-			</div>
-			<div class="form-group">	
-				<button type="submit" class="btn btn-custom" name="reg_user" id="submit-button">Inregistreaza-te</button>
-			</div>
-			<p>
-				Esti deja membru? <a href="login.php">Autentifica-te</a>
-			</p>
-		</form>
+		</div>
 	</div>
 </body>
 </html>
