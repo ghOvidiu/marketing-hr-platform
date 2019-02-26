@@ -17,7 +17,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="css/login-register-navbar.css">
+	<link rel="stylesheet" type="text/css" href="css/login-register.css">
 	<script type="text/javascript" src="js/login-register-js.js"></script>
 
 </head>
