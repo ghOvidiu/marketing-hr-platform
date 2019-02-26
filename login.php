@@ -42,27 +42,57 @@
 		<h2>Autentificare</h2>
 	</div>
 	<div id="login-panel">
-		<form method="POST" action="login.php" id="login-form">
+		<ul class="nav nav-tabs" id="tab-list">
+			<li class="active"><a data-toggle="tab" href="#user-login">Utilizator</a></li>
+			<li><a data-toggle="tab" href="#company-login">Companie</a></li>
+		</ul>
 
-			<?php include('errors.php'); ?>
+		<div class="tab-content">
+			<div class="tab-pane in active" id="user-login">
+				<form method="POST" action="login.php" id="login-form">
 
-			<div class="form-group">
-				<label>Email</label>
-				<input type="text" name="email" id="email">
+					<?php include('errors.php'); ?>
+
+					<div class="form-group">
+						<label>Email</label>
+						<input type="text" name="email" id="email">
+					</div>
+					<div class="form-group">
+						<label>Parola</label>
+						<input type="password" name="password" id="password">
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn-custom" name="login_user" id="submit-button">Autentifica-te</button>
+		                <button type="button" class="btn btn-block btn-social btn-facebook" onclick="window.location = '<?php echo $loginUrl ?>';"><span class="fab fa-facebook-f"></span>Login with Facebook</button>
+
+		            </div>
+					<p>
+						Nu esti membru? <a href="register.php">Inregistreaza-te</a>
+					</p>
+				</form>
 			</div>
-			<div class="form-group">
-				<label>Parola</label>
-				<input type="password" name="password" id="password">
-			</div>
-			<div class="form-group">
-				<button type="submit" class="btn-custom" name="login_user" id="submit-button">Autentifica-te</button>
-                <button type="button" class="btn btn-block btn-social btn-facebook" onclick="window.location = '<?php echo $loginUrl ?>';"><span class="fab fa-facebook-f"></span>Login with Facebook</button>
+			<div class="tab-pane" id="company-login">
+				<form method="POST" id="login-form">
 
-            </div>
-			<p>
-				Nu esti membru? <a href="register.php">Inregistreaza-te</a>
-			</p>
-		</form>
+					<?php include('errors.php'); ?>
+
+					<div class="form-group">
+						<label>Email-ul companiei</label>
+						<input type="text" name="email" id="email">
+					</div>
+					<div class="form-group">
+						<label>Parola</label>
+						<input type="password" name="password" id="password">
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn-custom" name="login_company" id="submit-button">Autentifica-te</button>
+		            </div>
+					<p>
+						Prima data cand compania ta intra pe platforma noastra? <a href="register.php">Inregistreaza-te</a>
+					</p>
+				</form>
+			</div>
+		</div>
 	</div>
 <script type="text/javascript">
 	$("#username, #password, #password2, #email, #submit-button").focus(function(){
@@ -70,7 +100,7 @@
 });
 
 $("#username, #password, #password2, #email, #submit-button").focusout(function(){
-	$(".header, #login-form, nav").fadeTo("slow", 0.9);
+	$(".header, #login-form, nav").fadeTo("slow", 0.96);
 });
 </script>
 
