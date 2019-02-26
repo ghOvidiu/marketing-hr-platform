@@ -26,7 +26,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="css/login-register-navbar.css">
+	<link rel="stylesheet" type="text/css" href="css/login-register.css">
 	<script type="text/javascript" src="js/login-register-js.js"></script>
 
 </head>
