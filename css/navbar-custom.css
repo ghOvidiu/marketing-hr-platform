@@ -1,0 +1,52 @@
+.brand-title, .brand-title:hover {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar {
+	border-radius: 0;
+	background-color: #72e;
+	opacity: 0.9;
+    border: none;
+}
+
+.navbar-brand, .navbar-brand:hover {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+ul.nav li a {
+    color: white;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+ul.nav li a:hover {
+    color: #72e;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+ul.navbar-right {
+    background-color: red;
+    padding-right: 1%;
+    transition: background-color 0.3s;
+}
+
+ul.navbar-right:hover {
+    background-color: #FFF;
+    color: red;
+    transition: all 0.5s;
+}
+
+ul.navbar-right li {
+    background-color: red;
+}
+
+ul.navbar-right li a:hover {
+    color: red;
+    transition: all 0.5s;
+}

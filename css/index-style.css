@@ -1,0 +1,49 @@
+.post-card {
+	border-radius: 25px;
+	background-color: grey;
+	margin-top: 15px;
+}
+
+.post-card-title {
+	font-size: 14px;
+	color: black;
+	text-align: center;
+}
+
+.post-card-logo img {
+	display: block;
+	height: 100%;
+	max-width: 100%;
+	margin: auto;
+}
+
+.post-card-reviews {
+	flex-basis: 100%;
+}
+
+.post-card-city {
+	flex-basis: 100%;
+}
+
+.post-card-wage {
+	flex-basis: 100%;
+}
+
+.post-card-footer {
+	display: flex;
+	table-layout: fixed;
+	width: 100%;
+	margin: 0;
+	padding: 5px;
+	text-align: center;
+}
+
+.filter-box {
+	height: 100%;
+	background-color: #000;
+	border: none;
+	border-radius: 10px 10px 0px 0px;
+	margin:0;
+	padding: 3px;
+	height: 69px;
+}
