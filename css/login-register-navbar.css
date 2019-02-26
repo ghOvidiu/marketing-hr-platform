@@ -27,5 +27,31 @@ body {
  	background: url(../assets/login-background.jpg) no-repeat;
  	background-size: cover;
  	background-position: center;
+}
 
+#tab-list {
+    margin: 0 auto;
+    width: 30%;
+    display: flex;
+    background-color: grey;
+    opacity: 0.96;
+}
+
+#tab-list li {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+#tab-list li a {
+    background-color: white;
+    color: black;
+    margin: 0;
+    border:none;
+    opacity: 0.96;
+}
+
+#tab-list li.active a {
+    background-color: #72e;
+    color:white;
+    margin: 0;
 }
